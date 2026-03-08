@@ -1,0 +1,12 @@
+{
+  "source": "https://www.heavydetail.ca",
+  "logo": "media/logo.png",
+  "images": [
+    {"file": "media/hero-auto.webp", "alt": "Esthétique automobile — traitement extérieur professionnel"},
+    {"file": "media/nano-ceramique.webp", "alt": "Application nano-céramique sur peinture automobile"},
+    {"file": "media/tracteur.webp", "alt": "Nettoyage de tracteur et machinerie agricole"},
+    {"file": "media/vr-campeur.webp", "alt": "Traitement extérieur véhicule récréatif"},
+    {"file": "media/vehicule-lourd.webp", "alt": "Détail véhicule lourd — moto, bateau, hélico"},
+    {"file": "media/gyeon-badge.webp", "alt": "GYEON Certified Detailer — badge certification"}
+  ]
+}

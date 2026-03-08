@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esthétique automobile et véhicules lourds | Heavy Detail — Centre-du-Québec</title>
+  <link rel="icon" type="image/png" href="media/favicon.png">
+  <meta name="description" content="Service mobile d'esthétique auto, nano-céramique et véhicules lourds au Centre-du-Québec. Résultats pro, partout dans la région. Soumission gratuite.">
+  <meta name="geo.region" content="CA-QC">
+  <meta name="geo.placename" content="Centre-du-Québec">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta property="og:title" content="Heavy Detail — Esthétique automobile et véhicules lourds">
+  <meta property="og:description" content="Service mobile d'esthétique auto, nano-céramique et véhicules lourds au Centre-du-Québec.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme inline {
+      --font-sans: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
+      --font-display: 'Bebas Neue', ui-sans-serif, system-ui, sans-serif;
+      --color-primary: #DC2626;
+      --color-primary-light: #EF4444;
+      --color-primary-dark: #B91C1C;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 font-sans text-gray-200 antialiased">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-gray-950/80 backdrop-blur-md z-50 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#">
+        <img src="media/logo.png" alt="Heavy Detail" class="h-10">
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#services" class="text-gray-400 hover:text-white transition text-sm font-medium tracking-wide uppercase">Services</a>
+        <a href="#nano" class="text-gray-400 hover:text-white transition text-sm font-medium tracking-wide uppercase">Nano-céramique</a>
+        <a href="#temoignages" class="text-gray-400 hover:text-white transition text-sm font-medium tracking-wide uppercase">Avis</a>
+        <a href="#apropos" class="text-gray-400 hover:text-white transition text-sm font-medium tracking-wide uppercase">À propos</a>
+        <a href="tel:8194733685" class="bg-primary hover:bg-primary-light text-white px-5 py-2 rounded-lg font-semibold text-sm transition-all duration-300 hover:scale-105">(819) 473-3685</a>
+      </div>
+      <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-gray-400">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-1 border-t border-white/5">
+      <a href="#services" class="block py-3 text-gray-400 hover:text-white transition">Services</a>
+      <a href="#nano" class="block py-3 text-gray-400 hover:text-white transition">Nano-céramique</a>
+      <a href="#temoignages" class="block py-3 text-gray-400 hover:text-white transition">Avis</a>
+      <a href="#apropos" class="block py-3 text-gray-400 hover:text-white transition">À propos</a>
+      <a href="tel:8194733685" class="block py-3 text-primary font-semibold">📞 (819) 473-3685</a>
+    </div>
+  </nav>
+
+  <!-- Hero — full-screen overlay -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="media/hero-auto.webp" alt="Esthétique automobile professionnelle" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-b from-gray-950/80 via-gray-950/60 to-gray-950"></div>
+    </div>
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+      <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
+        <img src="media/gyeon-badge.webp" alt="GYEON Certified" class="h-5">
+        <span class="text-sm text-gray-400 font-medium">GYEON Certified Detailer</span>
+      </div>
+      <h1 class="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white leading-none tracking-tight mb-6">
+        ESTHÉTIQUE AUTO<br>
+        <span class="text-primary">&amp; VÉHICULES LOURDS</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Du char de tous les jours à la machinerie agricole, on redonne fière allure à vos véhicules. Service mobile, résultats professionnels, partout au Centre-du-Québec.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:8194733685" class="bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25">
+          Obtenir une soumission gratuite
+        </a>
+        <a href="#services" class="border border-white/20 hover:border-white/40 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-white/5">
+          Voir nos services
+        </a>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Services — cards grid -->
+  <section id="services" class="py-20 md:py-32 bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="font-display text-4xl md:text-6xl text-white tracking-tight mb-4">NOS SERVICES</h2>
+        <p class="text-gray-400 text-lg max-w-xl mx-auto">Que ce soit votre auto, votre VR ou votre tracteur — on a le traitement qu'il faut.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Esthétique auto -->
+        <div class="group relative rounded-2xl overflow-hidden bg-gray-800/50 border border-white/5 hover:border-primary/30 transition-all duration-500">
+          <div class="aspect-[16/10] overflow-hidden">
+            <img src="media/hero-auto.webp" alt="Esthétique automobile" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+          <div class="p-6 sm:p-8">
+            <h3 class="font-display text-2xl sm:text-3xl text-white mb-3">ESTHÉTIQUE AUTOMOBILE</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed">Traitement complet intérieur et extérieur avec des produits haut de gamme et une finition impeccable.</p>
+            <div class="space-y-3">
+              <div class="flex justify-between items-center py-2 border-b border-white/5">
+                <span class="text-gray-300 font-medium">Forfait extérieur</span>
+                <span class="text-primary font-bold text-lg">à partir de 219,99 $</span>
+              </div>
+              <div class="flex justify-between items-center py-2 border-b border-white/5">
+                <span class="text-gray-300 font-medium">Forfait intérieur</span>
+                <span class="text-primary font-bold text-lg">à partir de 229,99 $</span>
+              </div>
+              <div class="flex justify-between items-center py-2">
+                <span class="text-white font-semibold">Forfait complet</span>
+                <span class="text-primary font-bold text-lg">à partir de 389,99 $</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nano-céramique -->
+        <div class="group relative rounded-2xl overflow-hidden bg-gray-800/50 border border-white/5 hover:border-primary/30 transition-all duration-500">
+          <div class="aspect-[16/10] overflow-hidden">
+            <img src="media/nano-ceramique.webp" alt="Nano-céramique et polissage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+          <div class="p-6 sm:p-8">
+            <h3 class="font-display text-2xl sm:text-3xl text-white mb-3">NANO-CÉRAMIQUE</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed">Protection durable qui fusionne avec la peinture. Brillance rehaussée, entretien facile, valeur de revente améliorée.</p>
+            <div class="flex justify-between items-center py-2">
+              <span class="text-white font-semibold">Traitement complet</span>
+              <span class="text-primary font-bold text-lg">à partir de 25 $/pi.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tracteurs -->
+        <div class="group relative rounded-2xl overflow-hidden bg-gray-800/50 border border-white/5 hover:border-primary/30 transition-all duration-500">
+          <div class="aspect-[16/10] overflow-hidden">
+            <img src="media/tracteur.webp" alt="Nettoyage tracteur et machinerie" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+          <div class="p-6 sm:p-8">
+            <h3 class="font-display text-2xl sm:text-3xl text-white mb-3">TRACTEURS &amp; MACHINERIE</h3>
+            <p class="text-gray-400 leading-relaxed">Dégraissage et nettoyage adaptés aux travaux lourds et agricoles. Vos équipements travaillent fort — on s'assure qu'ils ont l'air aussi solides qu'ils le sont.</p>
+          </div>
+        </div>
+
+        <!-- VR & Campeurs -->
+        <div class="group relative rounded-2xl overflow-hidden bg-gray-800/50 border border-white/5 hover:border-primary/30 transition-all duration-500">
+          <div class="aspect-[16/10] overflow-hidden">
+            <img src="media/vr-campeur.webp" alt="Traitement VR et campeur" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+          <div class="p-6 sm:p-8">
+            <h3 class="font-display text-2xl sm:text-3xl text-white mb-3">VR &amp; CAMPEURS</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed">Traitements extérieurs complets et nano-céramique. Prêt pour la route, prêt pour les compliments.</p>
+            <div class="flex justify-between items-center py-2">
+              <span class="text-white font-semibold">Nano-céramique</span>
+              <span class="text-primary font-bold text-lg">à partir de 25 $/pi.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Véhicules lourds mention -->
+      <div class="mt-8 text-center bg-gray-800/30 border border-white/5 rounded-2xl p-8">
+        <p class="text-gray-300 text-lg">
+          <span class="text-white font-semibold">Motos, bateaux, hélicos, avions</span> — peu importe le véhicule, on a l'expertise et les produits pour s'en occuper.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nano-céramique détaillé — split layout -->
+  <section id="nano" class="py-20 md:py-32 bg-gray-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
+        <!-- Image — 2 cols -->
+        <div class="lg:col-span-2 relative">
+          <img src="media/nano-ceramique.webp" alt="Application nano-céramique" class="rounded-2xl w-full">
+          <div class="absolute -bottom-4 -right-4 bg-primary rounded-xl px-6 py-3">
+            <span class="font-display text-2xl text-white">1 À 10 ANS</span>
+            <span class="text-white/80 text-sm block">de protection</span>
+          </div>
+        </div>
+        <!-- Texte — 3 cols -->
+        <div class="lg:col-span-3">
+          <h2 class="font-display text-4xl md:text-5xl text-white tracking-tight mb-6">PROTÉGEZ VOTRE<br><span class="text-primary">INVESTISSEMENT</span></h2>
+          <p class="text-gray-400 text-lg leading-relaxed mb-8">
+            La nano-céramique crée une barrière invisible et ultra résistante qui fusionne avec la peinture — bien au-delà d'une simple cire.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-4 mb-8">
+            <div class="flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-primary mt-2 shrink-0"></div>
+              <span class="text-gray-300">Décontamination complète de la peinture</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-primary mt-2 shrink-0"></div>
+              <span class="text-gray-300">Polissage une ou plusieurs étapes</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-primary mt-2 shrink-0"></div>
+              <span class="text-gray-300">Brillance rehaussée et effet miroir</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-primary mt-2 shrink-0"></div>
+              <span class="text-gray-300">Entretien plus facile — la saleté adhère moins</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-primary mt-2 shrink-0"></div>
+              <span class="text-gray-300">Valeur de revente améliorée</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-primary mt-2 shrink-0"></div>
+              <span class="text-gray-300">Temps de cure pour durabilité maximale</span>
+            </div>
+          </div>
+          <a href="tel:8194733685" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-light text-white px-6 py-3 rounded-xl font-bold transition-all duration-300 hover:scale-105">
+            Demander une soumission
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pourquoi nous — bande rouge -->
+  <section class="py-16 md:py-20 bg-primary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="font-display text-4xl md:text-5xl text-white mb-2">100%</div>
+          <div class="text-white/80 font-medium">Mobile — on se déplace</div>
+        </div>
+        <div>
+          <div class="font-display text-4xl md:text-5xl text-white mb-2">5★</div>
+          <div class="text-white/80 font-medium">Avis clients</div>
+        </div>
+        <div>
+          <div class="font-display text-4xl md:text-5xl text-white mb-2">GYEON</div>
+          <div class="text-white/80 font-medium">Produits certifiés</div>
+        </div>
+        <div>
+          <div class="font-display text-4xl md:text-5xl text-white mb-2">10 ANS</div>
+          <div class="text-white/80 font-medium">Protection nano max</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section id="temoignages" class="py-20 md:py-32 bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-4xl md:text-6xl text-white tracking-tight text-center mb-16">CE QU'ILS EN DISENT</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-800/50 border border-white/5 rounded-2xl p-8">
+          <div class="flex gap-1 mb-4">
+            <span class="text-yellow-400 text-xl">★★★★★</span>
+          </div>
+          <p class="text-gray-300 text-lg leading-relaxed mb-6 italic">"Hubert et Jay ont fait toute qu'une job ! Mes deux voitures ont repris goût à la vie. Je recommande fortement."</p>
+          <p class="text-white font-semibold">— Marco</p>
+        </div>
+        <div class="bg-gray-800/50 border border-white/5 rounded-2xl p-8">
+          <div class="flex gap-1 mb-4">
+            <span class="text-yellow-400 text-xl">★★★★★</span>
+          </div>
+          <p class="text-gray-300 text-lg leading-relaxed mb-6 italic">"Véhicule remis à neuf, super belle job, intérieur et extérieur très propres à très bon prix."</p>
+          <p class="text-white font-semibold">— Dominic</p>
+        </div>
+        <div class="bg-gray-800/50 border border-white/5 rounded-2xl p-8">
+          <div class="flex gap-1 mb-4">
+            <span class="text-yellow-400 text-xl">★★★★★</span>
+          </div>
+          <p class="text-gray-300 text-lg leading-relaxed mb-6 italic">"Mon auto est plus propre que quand je l'ai eue ! Service très courtois."</p>
+          <p class="text-white font-semibold">— Claudia</p>
+        </div>
+        <div class="bg-gray-800/50 border border-white/5 rounded-2xl p-8">
+          <div class="flex gap-1 mb-4">
+            <span class="text-yellow-400 text-xl">★★★★★</span>
+          </div>
+          <p class="text-gray-300 text-lg leading-relaxed mb-6 italic">"Un service fiable, flexible et efficace !"</p>
+          <p class="text-white font-semibold">— Marc-André</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section id="apropos" class="py-20 md:py-32 bg-gray-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-12 items-center">
+        <div class="lg:col-span-2">
+          <h2 class="font-display text-4xl md:text-5xl text-white tracking-tight mb-6">ON EST OBSÉDÉS<br><span class="text-primary">PAR LA FINITION</span></h2>
+          <p class="text-gray-400 text-lg leading-relaxed mb-6">
+            Chez Heavy Detail, on n'est pas juste passionnés par les véhicules — on est obsédés par la finition. Que ce soit une auto, un VR, une machinerie agricole ou un camion lourd, chaque détail compte.
+          </p>
+          <p class="text-gray-400 text-lg leading-relaxed mb-8">
+            Notre mission : redonner fière allure à vos véhicules, peu importe leur taille, leur âge ou leur état. Service mobile ou en atelier — c'est vous qui choisissez.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-gray-800 border border-white/5 text-gray-300 px-4 py-2 rounded-full text-sm font-medium">Automobile</span>
+            <span class="bg-gray-800 border border-white/5 text-gray-300 px-4 py-2 rounded-full text-sm font-medium">VR / Campeurs</span>
+            <span class="bg-gray-800 border border-white/5 text-gray-300 px-4 py-2 rounded-full text-sm font-medium">Machinerie agricole</span>
+            <span class="bg-gray-800 border border-white/5 text-gray-300 px-4 py-2 rounded-full text-sm font-medium">Motos</span>
+            <span class="bg-gray-800 border border-white/5 text-gray-300 px-4 py-2 rounded-full text-sm font-medium">Bateaux</span>
+            <span class="bg-gray-800 border border-white/5 text-gray-300 px-4 py-2 rounded-full text-sm font-medium">Camions lourds</span>
+          </div>
+        </div>
+        <div class="flex justify-center lg:justify-end">
+          <img src="media/gyeon-badge.webp" alt="GYEON Certified Detailer" class="w-48 opacity-80">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Options détaillées -->
+  <section class="py-20 md:py-32 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-4xl md:text-5xl text-white tracking-tight text-center mb-4">OPTIONS DISPONIBLES</h2>
+      <p class="text-gray-400 text-center text-lg mb-12">Ajoutez ces traitements à n'importe quel forfait.</p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="bg-gray-800/50 border border-white/5 rounded-xl p-5 flex items-center gap-4 hover:border-primary/30 transition-all duration-300">
+          <div class="w-3 h-3 rounded-full bg-primary shrink-0"></div>
+          <span class="text-gray-200 font-medium">Polissage des phares</span>
+        </div>
+        <div class="bg-gray-800/50 border border-white/5 rounded-xl p-5 flex items-center gap-4 hover:border-primary/30 transition-all duration-300">
+          <div class="w-3 h-3 rounded-full bg-primary shrink-0"></div>
+          <span class="text-gray-200 font-medium">Décontamination de la peinture</span>
+        </div>
+        <div class="bg-gray-800/50 border border-white/5 rounded-xl p-5 flex items-center gap-4 hover:border-primary/30 transition-all duration-300">
+          <div class="w-3 h-3 rounded-full bg-primary shrink-0"></div>
+          <span class="text-gray-200 font-medium">Nettoyage du moteur</span>
+        </div>
+        <div class="bg-gray-800/50 border border-white/5 rounded-xl p-5 flex items-center gap-4 hover:border-primary/30 transition-all duration-300">
+          <div class="w-3 h-3 rounded-full bg-primary shrink-0"></div>
+          <span class="text-gray-200 font-medium">Traitement pare-brise</span>
+        </div>
+        <div class="sm:col-span-2 bg-gray-800/50 border border-white/5 rounded-xl p-5 flex items-center gap-4 hover:border-primary/30 transition-all duration-300">
+          <div class="w-3 h-3 rounded-full bg-primary shrink-0"></div>
+          <span class="text-gray-200 font-medium">Traitement nano-céramique</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="py-20 md:py-32 bg-gray-950 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/10"></div>
+    <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-4xl md:text-6xl text-white tracking-tight mb-6">PRÊT À REDONNER<br><span class="text-primary">FIÈRE ALLURE</span><br>À VOTRE VÉHICULE?</h2>
+      <p class="text-gray-400 text-lg mb-10">Service mobile partout au Centre-du-Québec. Soumission gratuite, résultats garantis.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:8194733685" class="bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25">
+          (819) 473-3685
+        </a>
+        <a href="mailto:info@heavydetail.ca" class="border border-white/20 hover:border-white/40 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-white/5">
+          info@heavydetail.ca
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 bg-gray-950 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-4">
+          <img src="media/logo.png" alt="Heavy Detail" class="h-8">
+          <span class="text-gray-500 text-sm">© 2026 Heavy Detail. Tous droits réservés.</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="https://www.facebook.com/profile.php?id=61559234063396" target="_blank" rel="noopener" class="text-gray-500 hover:text-white transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="tel:8194733685" class="text-gray-500 hover:text-white transition text-sm font-medium">(819) 473-3685</a>
+          <a href="mailto:info@heavydetail.ca" class="text-gray-500 hover:text-white transition text-sm font-medium">info@heavydetail.ca</a>
+        </div>
+      </div>
+      <div class="mt-6 text-center">
+        <span class="text-gray-600 text-xs">Conception web : <a href="https://ioangikwong.dev" class="hover:text-gray-400 transition">Ioan Gi-Kwong</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Heavy Detail",
+    "description": "Service mobile d'esthétique automobile et véhicules lourds au Centre-du-Québec. Nano-céramique, polissage, detailing.",
+    "telephone": "(819) 473-3685",
+    "email": "info@heavydetail.ca",
+    "url": "https://www.heavydetail.ca",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Centre-du-Québec"
+    },
+    "serviceType": ["Esthétique automobile", "Nano-céramique", "Detailing véhicules lourds", "Service mobile"],
+    "sameAs": ["https://www.facebook.com/profile.php?id=61559234063396"]
+  }
+  </script>
+
+</body>
+</html>
